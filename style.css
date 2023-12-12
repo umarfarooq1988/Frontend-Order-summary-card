@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #e0e8ff;
+    position: relative;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+   position: absolute;
+   background-color: #ffffff;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   max-width: 350px;
+   border-radius: 18px;
+   overflow: hidden;
+}
+
+
+
+.text {
+    padding: 20px;
+    text-align: center;
+}
+
+.summary {
+    font-size: 18px;
+    font-weight: 900;
+    color: #1f2f56;
+    margin-bottom: 18px;
+}
+
+.title {
+    margin: 20px;
+    color: hsl(230.77deg 14.44% 64.71%);
+}
+.box {
+    background-color: #f5f7ff;
+    border-radius: 10px;
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plan-left {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.plan-text {
+    margin-left: 15px;
+}
+
+.plan-text h5 {
+    font-weight: 900;
+    font-size: 16px;
+    color: #1f2f56;
+}
+
+.plan-text p {
+    font-size: 12px;
+    color: hsl(230.77deg 14.44% 64.71%);
+}
+
+.box a {
+    font-weight: 900;
+    color: #1f2f56;
+
+}
+
+.box a:hover {
+    text-decoration: none;
+    color: #1f2f56;
+}
+
+a.procced-btn {
+    display: block;
+    text-decoration: none;
+    background-color: #3829e0;
+    color: white;
+    padding: 10px 0;
+    border-radius: 12px;
+    margin: 18px 0;
+
+}
+
+a.procced-btn:hover {
+    background-color: #1f2f56;
+}
+
+a.cancel-btn {
+    color: #3829e0;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+a.cancel-btn:hover {
+  color: #1f2f56;;
+}
+
+@media only screen and (max-width: 425px) {
+    body {
+        background-image: url(./images/pattern-background-desktop.svg);
+        font-size: 14px;
+    }
+    .container {
+        max-width: 85%;
+    }
+    .summary {
+        font-size: 24px;
+    }
+
+    .box {
+        padding: 12px;
+    }
+
+    .plan-left {
+        margin-left: 10px;
+    }
+
+    a.procced-btn, a.cancel-btn {
+        font-size: 12px;
+    }
+    
+}
